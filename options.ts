@@ -620,9 +620,9 @@ const options = mkOptions(OPTIONS, {
             shortcuts: {
                 left: {
                     shortcut1: {
-                        icon: opt("󰇩"),
-                        tooltip: opt("Microsoft Edge"),
-                        command: opt("microsoft-edge-stable")
+                        icon: opt("󰈹"),
+                        tooltip: opt("Firefox"),
+                        command: opt("firefox")
                     },
                     shortcut2: {
                         icon: opt(""),
@@ -690,8 +690,8 @@ const options = mkOptions(OPTIONS, {
             },
             weather: {
                 interval: opt(60000),
-                unit: opt<"metric" | "imperial">("imperial"),
-                location: opt("Los Angeles"),
+                unit: opt<"metric" | "imperial">("metric"),
+                location: opt("Milan"),
                 key: opt<string>(
                     JSON.parse(Utils.readFile(`${App.configDir}/.weather.json`) || "{}")?.weather_api_key || "",
                 ),
